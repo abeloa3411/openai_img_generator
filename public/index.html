@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI IMG GEN</title>
+  </head>
+  <body>
+    <section>
+      <header>
+        <h3>Hello, there welcom to ai image generator</h3>
+        <h3>Type any image description you want</h3>
+      </header>
+      <main>
+        <div class="inputs">
+          <form id="form">
+            <div class="input">
+              <input type="text" name="prompt" id="prompt" />
+            </div>
+            <div class="select">
+              <select name="size" id="size">
+                <option value="small">small</option>
+                <option value="medium" selected>medium</option>
+                <option value="large">large</option>
+              </select>
+            </div>
+            <div class="btn-container">
+              <button type="submit" id="btn">Generate</button>
+            </div>
+          </form>
+        </div>
+        <div class="image-container">
+          <img src="" alt="ai-generate-image" id="image" />
+        </div>
+      </main>
+    </section>
+    <script src="./js/app.js" defer></script>
+  </body>
+</html>
