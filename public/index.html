@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/spinner.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/app.js" defer></script>
+
     <title>AI IMG GEN</title>
   </head>
   <body>
@@ -26,7 +30,7 @@
               </select>
             </div>
             <div class="btn-container">
-              <button type="submit" id="btn">Generate</button>
+              <button type="submit" class="btn btn-border-2">Generate</button>
             </div>
           </form>
         </div>
@@ -34,7 +38,13 @@
           <img src="" alt="ai-generate-image" id="image" />
         </div>
       </main>
+      <div class="spinner-container">
+        <div class="spinner">
+          <div class="circle one"></div>
+          <div class="circle two"></div>
+          <div class="circle three"></div>
+        </div>
+      </div>
     </section>
-    <script src="./js/app.js" defer></script>
   </body>
 </html>
